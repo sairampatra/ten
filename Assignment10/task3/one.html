@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- grid-auto-rows and grid-auto-columns are CSS properties used in grid layouts to control the size of rows and columns that are created automatically to accommodate grid items. These properties are useful when you want to specify the size of rows and columns for items that don't have an explicit placement in the grid -->
+<style>
+            .container {
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-auto-rows: 100px; /* Set the height of implicit rows */
+            grid-gap: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+</style>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+         <div class="item">5</div>
+       
+    </div>
+    <!-- In this example, grid-auto-rows: 100px; sets the height of implicitly created rows. -->
+</body>
+
+</html>

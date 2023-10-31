@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grand{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+width: 100%;
+        }
+        .container1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+            width: 34vw;
+    height: 40vh;
+            /* border: 2px solid black; */
+            grid-gap: 7px;
+            margin: auto;
+            padding: 17px;
+            background-color:lightpink;
+            justify-items: center;
+            margin: 1px 1px 1px 1px;
+        }
+
+        .item {
+            border-radius: 6px;
+            /* border: 2px solid black; */
+            width: 70%;
+            height: 70%;
+background-color: bisque;
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+            width: 34vw;
+    height: 40vh;
+    background-color: black;
+    padding: 17px;
+
+            border: 2px solid black;
+            grid-gap: 7px;
+           
+        }
+        .sub{
+            border-radius: 6px;
+            width: 70%;
+            height: 70%;
+background-color: olive;
+        }
+        .sub1, .sub4{
+            justify-self: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- i-justify-self is applied on grid container where as justify-self is applied of grid items
+    ii-by using justify-self we can change alignment of the all items hoizontally with in a cell where as by using justify-self we can change alignment of a single iten in a cell  -->
+    <!-- code example for justify-items -->
+    <div class="grand">
+        <div class="container1">
+    
+            <div class="item"> justify-items</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+    
+<!-- code example for justify-self -->
+
+        </div>
+        <div class="container2">
+            <div class="sub1 sub">justify-self</div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub4 sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+    
+        </div>
+    </body>
+    </div>
+   
+
+</html>

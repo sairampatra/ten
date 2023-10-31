@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  .container {
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-auto-columns: 150px; /* Set the width of implicit columns */
+        grid-gap: 10px;
+    }
+
+    .item {
+        background-color: lightblue;
+        padding: 10px;
+        text-align: center;
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <!-- These items will create new columns with a width of 150px -->
+    </div>
+</body>
+<!-- In this example, grid-auto-columns: 150px; sets the width of implicitly created columns.-->
+</html>
