@@ -9,13 +9,14 @@
             display: grid;
     /* grid-auto-flow: column; */
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(2,1fr);
+    /* grid-template-rows: repeat(2,1fr); */
     grid-gap: 21px;
     width: 55vw;
     height: 24vh;
     border: 2px solid black;
     margin: 6px;
     padding: 22px;
+    
 
         }
         .item{
@@ -37,38 +38,12 @@ font-size: 22px;
                                
         }
         .odd1{
-            grid-column-start: 1;
-    grid-row-start: 2;
+            order: 7;
         }
-        .even2{
-            grid-column-start: 2;
-    grid-row-start: 2;
-        }
-        .odd2{
-            grid-column-start: 1;
-    grid-row-start: 1;
-        }
-        .even2{
-            grid-column-start: 2;
-    grid-row-start: 1;
-        }
-        .odd3{
-            grid-column-start: 3;
-            grid-row-start: 1;
-        }
-        .odd4{
-            grid-column-start: 5;
-            grid-row-start: 1;
-        }
-        .even3{
-            grid-column-start:4;
-            grid-row-start: 1;
-        }
-        .even4{
-            grid-column-start:6;
-            grid-row-start: 1;
-
-        }
+       
+         .even1{
+           order: 8;
+         }
     </style>
 </head>
 <body>
